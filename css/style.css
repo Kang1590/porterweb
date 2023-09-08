@@ -36,8 +36,12 @@ a {
 #head a {
   color: white;
   text-align: center;
+  transition: 0.5s;
 }
-
+#head a:hover {
+  color: black;
+  text-shadow: 1px 1px 10px white;
+}
 #top {
   background: #333;
   display: flex;
@@ -45,8 +49,11 @@ a {
 #top .logo {
   flex: 0.3;
   padding: 10px;
+  transition: 1s;
 }
-
+#top .logo:hover {
+  filter: invert(100%) brightness(80%);
+}
 #top ul {
   flex: 1.8;
   display: flex;
