@@ -29,6 +29,7 @@ a {
   color: #333;
 }
 
+/* 최상단배너 */
 #head {
   background: black;
   padding: 15px;
@@ -42,6 +43,8 @@ a {
   color: black;
   text-shadow: 1px 1px 10px white;
 }
+
+/* 탑전체 */
 #top {
   background: #333;
   display: flex;
@@ -61,7 +64,7 @@ a {
 #top ul li {
   flex: 0.5;
 }
-
+/* 메뉴부분 */
 a.mainMenu {
   font-size: 1.5rem;
   display: block;
@@ -102,6 +105,7 @@ nav.subMenu > a.act {
   font-weight: bold;
 }
 
+/* 검색창과 아이콘 */
 #top .search {
   flex: 0.5;
   margin: auto;
@@ -115,6 +119,7 @@ nav.subMenu > a.act {
   font-size: 0.8rem;
   margin-left: 50px;
   width: 200px;
+  text-align: center;
 }
 #top .search button {
   border: none;
@@ -146,6 +151,8 @@ nav.subMenu > a.act {
   filter: invert(100%) sepia(0) saturate(100%) hue-rotate(520deg)
     brightness(115%) contrast(100%);
 }
+
+/* 슬라이드부분 */
 #bb {
   width: 100%;
   overflow: hidden;
@@ -156,8 +163,7 @@ nav.subMenu > a.act {
   width: 300%;
 }
 
-#banner {
-}
+/* 배너부분 */
 #banner div {
   display: flex;
   flex-wrap: wrap;
@@ -202,6 +208,7 @@ nav.subMenu > a.act {
   opacity: 1;
 }
 
+/* 푸터부분 */
 footer {
   display: block;
   background: #333;
