@@ -54,10 +54,10 @@ a {
 #top .logo {
   flex: 0.18;
   padding: 10px;
-  transition: 1s;
+  transition: 0.5s;
 }
 #top .logo:hover {
-  filter: invert(100%) brightness(80%);
+  filter: invert(10%) brightness(70%);
 }
 #top ul {
   flex: 1.8;
@@ -131,6 +131,7 @@ nav.subMenu > a.act {
   cursor: pointer;
   color: orange;
   font-weight: bold;
+  transition: 0.5s;
 }
 #top .search button:hover {
   text-shadow: 1px 1px 1px black;
