@@ -239,6 +239,10 @@ footer .left {
   flex: 1;
   padding-left: 20px;
 }
+footer a:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
 footer .center {
   flex: 1;
 }
