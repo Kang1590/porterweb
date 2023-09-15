@@ -8,6 +8,7 @@
 
 html,
 body {
+  font-family: "Merriweather Sans", sans-serif;
   margin: auto;
 }
 ::-webkit-scrollbar {
