@@ -66,17 +66,20 @@ a {
 }
 #top ul li {
   position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
 }
 /* 메뉴부분 */
 a.mainMenu {
+  padding: 25px;
+  flex: 1;
   font-size: 1.5rem;
   display: block;
-  margin: 35px 0 0 50px;
   text-align: center;
   z-index: 1;
   color: white;
   transition: 0.5s;
-  width: 110px;
 }
 a.mainMenu:hover,
 a.mainMenu.act {
@@ -85,12 +88,12 @@ a.mainMenu.act {
   font-weight: bold;
 }
 nav.subMenu {
+  width: 333px;
   display: none;
   z-index: 2;
   position: absolute;
-  width: 130px;
-  top: 62%;
-  left: 19%;
+  top: 90px;
+  left: -20px;
 }
 nav.subMenu > a {
   background: gray;
