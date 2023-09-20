@@ -254,7 +254,7 @@ article {
   justify-content: space-around;
 }
 
-.material-symbols-outlined {
+#related .material-symbols-outlined {
   background: none;
   border: none;
   font-size: 3rem;
