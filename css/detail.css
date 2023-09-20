@@ -241,3 +241,21 @@ article {
   padding: 50px 0;
   line-height: 180%;
 }
+
+/* RELATED ITEMS부분 */
+#related {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  border: 2px solid red;
+}
+#related .items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.material-symbols-outlined {
+  background: none;
+  border: none;
+  font-size: 3rem;
+}
