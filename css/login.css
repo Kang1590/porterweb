@@ -271,6 +271,7 @@ main > div > p {
   position: absolute;
   top: 85px;
   left: 110px;
+  font-weight: bold;
 }
 
 #orlog .naver {
@@ -285,6 +286,7 @@ main > div > p {
   top: 88px;
   left: -10px;
   font-size: 0.8rem;
+  font-weight: bold;
 }
 
 /* 푸터부분 */
