@@ -129,22 +129,28 @@ main {
 #left {
   flex: 0.5;
 }
+#left .bigimg {
+  width: 600px;
+  margin: auto;
+}
 
 nav.smallimg {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 nav.smallimg > a {
   margin: auto;
 }
 nav.smallimg > a > img {
-  width: 80px;
-  margin: 20px;
+  width: 60px;
+  margin: 10px;
 }
 
 #right {
   flex: 0.35;
   line-height: 180%;
+  padding-top: 80px;
 }
 #right h3 {
   font-size: 1.5rem;
@@ -240,22 +246,148 @@ article {
   margin: auto;
   padding: 50px 0;
   line-height: 180%;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 /* RELATED ITEMS부분 */
 #related {
-  width: 80%;
+  width: 78%;
   margin: auto;
   text-align: center;
-  border: 2px solid red;
+  overflow: hidden;
 }
 #related .items {
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  left: -300px;
 }
 
+#related .items img {
+  width: 300px;
+}
 #related .material-symbols-outlined {
   background: none;
   border: none;
   font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+}
+.material-symbols-outlined:first-of-type {
+  z-index: 1;
+  top: 175%;
+  left: 7%;
+}
+.material-symbols-outlined:nth-of-type(2) {
+  top: 175%;
+  right: 8%;
+}
+
+/* 상세정보부분 */
+#information {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+#information div {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 150px;
+}
+#information div:hover,
+#information div.act {
+  border-bottom: none;
+}
+#information a {
+  transition: 0.2s;
+}
+#information a:hover,
+#information a.act {
+  color: orangered;
+}
+
+/* 표부분 */
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+table th {
+  background: #ddd;
+  width: 20%;
+  text-align: start;
+  padding-left: 10px;
+}
+table td {
+  padding: 25px 0 25px 10px;
+}
+
+#tb2 {
+  display: none;
+}
+
+#rev {
+  display: none;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  line-height: 100%;
+  margin-bottom: 100px;
+}
+#rev .button {
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 15px 35px;
+  margin-bottom: 20px;
+}
+#rev .text {
+  margin-top: 50px;
+}
+#rev span {
+  color: orangered;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/* 푸터부분 */
+footer {
+  display: block;
+  background: #333;
+}
+footer > div {
+  display: flex;
+}
+footer a {
+  display: block;
+  line-height: 250%;
+  color: white;
+}
+footer .bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 15px;
+  display: block;
+  color: white;
+  text-align: center;
+}
+footer .left {
+  flex: 1;
+  padding-left: 20px;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
+footer .center {
+  flex: 1;
+}
+footer .right {
+  flex: 0.5;
+  padding: 10px 20px 0 0;
 }

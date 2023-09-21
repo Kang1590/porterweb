@@ -21,4 +21,32 @@ $(document).ready(function () {
         $("#slide").css("left", "0");
       });
   }
-});
+  // 상세이미지
+  $(".smallimg a").mouseenter(function () {
+    const x = $(this).children().attr("src");
+    console.log(x);
+    $(".bigimg img").attr("src", x);
+  });
+
+  // RELATED ITEMS부분
+  // 왼쪽으로 화살표클릭시 이동
+  $(".material-symbols-outlined:first-of-type").click(function toLeft() {
+    $(".items")
+      .stop()
+      .animate({ left: "-600px" }, 1000, function () {
+        $(".items").append($(".items a").eq(0));
+        $(".items").css("left", "-300px");
+      });
+  });
+  // 오른쪽 화살표클릭시 이동
+  $(".material-symbols-outlined:nth-of-type(2)").click(function () {
+    $(".items")
+      .stop()
+      .animate({ left: "0" }, 1000, function () {
+        $(".items").prepend($(".items a").eq(6));
+        $(".items").css("left", "-300px");
+      });
+  });
+
+  // 버튼클릭시 테이블나오기
+}); ////all end
