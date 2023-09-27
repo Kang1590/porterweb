@@ -301,7 +301,7 @@ article {
 }
 #information div:hover,
 #information div.act {
-  border-bottom: none;
+  background: #ddd;
 }
 #information a {
   transition: 0.2s;

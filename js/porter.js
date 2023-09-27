@@ -49,4 +49,19 @@ $(document).ready(function () {
   });
 
   // 버튼클릭시 테이블나오기
+  $("#information .tb_2").click(function () {
+    $("#tb1").fadeOut().removeClass("act");
+    $("#rev").fadeOut().removeClass("act");
+    $("#tb2").fadeIn().addClass("act");
+  });
+  $("#information .tb_1").click(function () {
+    $("#tb2").fadeOut();
+    $("#rev").fadeOut();
+    $("#tb1").fadeIn();
+  });
+  $("#information .rev_1").click(function () {
+    $("#tb1").fadeOut();
+    $("#tb2").fadeOut();
+    $("#rev").fadeIn();
+  });
 }); ////all end
