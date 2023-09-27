@@ -55,13 +55,13 @@ $(document).ready(function () {
     $("#tb2").fadeIn().addClass("act");
   });
   $("#information .tb_1").click(function () {
-    $("#tb2").fadeOut();
-    $("#rev").fadeOut();
-    $("#tb1").fadeIn();
+    $("#tb2").fadeOut().removeClass("act");
+    $("#rev").fadeOut().removeClass("act");
+    $("#tb1").fadeIn().addClass("act");
   });
   $("#information .rev_1").click(function () {
-    $("#tb1").fadeOut();
-    $("#tb2").fadeOut();
-    $("#rev").fadeIn();
+    $("#tb1").fadeOut().removeClass("act");
+    $("#tb2").fadeOut().removeClass("act");
+    $("#rev").fadeIn().addClass("act");
   });
 }); ////all end
