@@ -310,4 +310,7 @@ footer .right {
     margin-left: 0;
     padding: 15px;
   }
+  #banner span {
+    display: none;
+  }
 }

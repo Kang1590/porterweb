@@ -12,21 +12,21 @@ $(document).ready(function () {
     $("a.mainMenu").removeClass("act");
   });
   //작은기계장치
-  if( $(window).width()<=900 ){
-		  $("#top button").click(function(){
-			  if( $(this).text() =="menu" ){				 
-				  $(this).text("close");				  
-			  } else {
-				  $(this).text("menu");
-			  }
-			  $("#top li>a").stop().slideToggle();			  
-		  });
-		  $("a#mainMenu").click(function(){
-			$("nav.subMenu").stop().slideUp(300);
-			$(this).next().stop().slideDown();  
-		  });
+  if ($(window).width() <= 900) {
+    $("#top button").click(function () {
+      if ($(this).text() == "menu") {
+        $(this).text("close");
+      } else {
+        $(this).text("menu");
+      }
+      $("#top li>a").stop().slideToggle();
+    });
+    $("a#mainMenu").click(function () {
+      $("nav.subMenu").stop().slideUp(300);
+      $(this).next().stop().slideToggle();
+    });
   }
-  
+
   // 배너이미지 슬라이드
   setInterval(toLeft, 2800);
   function toLeft() {
