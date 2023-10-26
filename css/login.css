@@ -154,19 +154,23 @@ main > div > p {
 #pw {
   padding: 10px;
   padding-left: 0;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
 }
 #id > input {
-  margin-left: 105px;
-  padding: 10px 100px;
+  margin-left: 10%;
+  padding: 5% 5%;
   border-radius: 5px;
   border: 1px solid #777;
+  width: 50%;
 }
 #pw > input {
-  margin-left: 80px;
-  padding: 10px 100px;
-  border: 1px solid #777;
+  margin-left: 7%;
+  padding: 5% 5%;
   border-radius: 5px;
+  border: 1px solid #777;
+  width: 50%;
 }
 #login {
   background: rgb(218, 118, 36);
@@ -174,10 +178,10 @@ main > div > p {
   font-size: 1.5rem;
   color: white;
   position: absolute;
-  top: 95px;
-  padding: 35px;
+  top: 38%;
+  left: 32%;
+  padding: 40px;
   border-radius: 10px;
-  left: 670px;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -212,21 +216,21 @@ main > div > p {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
-#order {
-  display: block;
-}
 #order,
 #odnumber {
   padding: 10px;
   padding-left: 0;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
 }
 
 #order > input {
-  margin-left: 80px;
-  padding: 10px 100px;
-  border: 1px solid #777;
+  margin-left: 10%;
+  padding: 5% 5%;
   border-radius: 5px;
+  border: 1px solid #777;
+  width: 50%;
 }
 
 #odnumber > input {

@@ -51,6 +51,9 @@ a {
 #top {
   background: #333;
   display: flex;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 #top .logo {
   flex: 0.18;
@@ -59,6 +62,9 @@ a {
 }
 #top .logo:hover {
   filter: invert(10%) brightness(70%);
+}
+#top .logo img {
+  min-width: 70px;
 }
 #top ul {
   flex: 1.8;
@@ -69,6 +75,9 @@ a {
   display: flex;
   flex: 1;
   align-items: center;
+}
+#top button {
+  display: none;
 }
 /* 메뉴부분 */
 a.mainMenu {
@@ -136,6 +145,7 @@ nav.subMenu > a.act {
   color: orange;
   font-weight: bold;
   transition: 0.5s;
+  display: inline-block;
 }
 #top .search button:hover {
   text-shadow: 1px 1px 1px black;
@@ -143,7 +153,7 @@ nav.subMenu > a.act {
 }
 
 #top .icons {
-  flex: 0.2;
+  flex-basis: 8%;
   margin: auto;
   display: flex;
   margin-right: 15px;
@@ -169,7 +179,7 @@ nav.subMenu > a.act {
   width: 300%;
 }
 #slide img {
-  width: 1950px;
+  max-width: 100%;
 }
 
 /* 배너부분 */
@@ -252,4 +262,27 @@ footer .center {
 footer .right {
   flex: 0.5;
   padding: 10px 20px 0 0;
+}
+
+/* 반응형 */
+@media (max-width: 1000px) {
+  #top ul {
+    display: none;
+  }
+  #top .icons {
+    display: none;
+  }
+  #top .search input {
+    display: none;
+  }
+  #top .search button {
+    display: none;
+  }
+  #top button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    display: block;
+  }
 }

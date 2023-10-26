@@ -16,7 +16,7 @@ $(document).ready(function () {
   function toLeft() {
     $("#slide")
       .stop()
-      .animate({ left: "-1950px" }, 1200, function () {
+      .animate({ left: "-100%" }, 1200, function () {
         $("#slide").append($("#slide a").eq(0));
         $("#slide").css("left", "0");
       });
