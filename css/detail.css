@@ -41,6 +41,9 @@ a {
   padding: 10px 20px;
   transition: 0.5s;
 }
+#top .logo img {
+  min-width: 150px;
+}
 #top .logo:hover {
   filter: invert(10%) brightness(70%);
 }
@@ -66,7 +69,6 @@ a {
 #top nav > a:hover {
   color: orange;
 }
-
 /* 메뉴부분 */
 #menu {
   display: flex;
@@ -111,6 +113,7 @@ a {
   color: orange;
   font-weight: bold;
   transition: 0.5s;
+  display: inline-block;
 }
 #menu .search button:hover {
   text-shadow: 1px 1px 1px black;
@@ -384,4 +387,17 @@ footer .center {
 footer .right {
   flex: 0.5;
   padding: 10px 20px 0 0;
+}
+
+/* 반응형 */
+@media (min-width: 900px) {
+  #menu .search {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  #right {
+    width: 50%;
+  }
 }
